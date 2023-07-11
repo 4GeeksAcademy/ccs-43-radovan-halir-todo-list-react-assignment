@@ -39,9 +39,9 @@ const Home = () => {
 					) : (
 						todos.map((item, index) => {
 							return (
-								<li className="hover">
+								<li className="hover" key={index}>
 									{item}{""}
-									<i class="fa-solid fa-trash cesto"
+									<i className="fa-solid fa-trash cesto"
 										onClick={() =>
 											setTodos(
 												todos.filter(
